@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOJ Username</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 200px;
+        padding: 10px;
+      }
+      input,
+      button {
+        margin: 5px 0;
+        width: 100%;
+      }
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      button.deleteButton {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>명단 관리</h3>
+    <input type="text" id="id" placeholder="아이디" />
+    <input type="text" id="name" placeholder="이름" />
+    <button id="addButton">추가</button>
+    <input type="file" id="fileInput" />
+    <button id="uploadButton">JSON 파일 업로드</button>
+    <button id="exportButton">JSON 파일 내보내기</button>
+    <h4>현재 명단</h4>
+    <ul id="list"></ul>
+    <script src="popup.js"></script>
+  </body>
+</html>
